@@ -4,7 +4,7 @@ function Footer(){
     return(
         <div className = "row">
             <div className = "col-md-12">
-                <div className = "footer">Футтер</div>
+                <div className = "footer"></div>
             </div>
         </div>
     )
