@@ -12,6 +12,7 @@ let Issue = (props) => {
                     <table className = 'table table-striped'>
                         <thead>
                             <tr>
+                            <th>№</th>
                             <th>Номер купона</th>
                             <th>Номер заказа</th>
                             <th>Стоимость</th>
@@ -24,6 +25,7 @@ let Issue = (props) => {
                             issue != undefined ? (
                             issue.map((value,index) => {
                                 return <tr key = {index}>
+                                    <td>{index+1}</td>
                                     <td>{value.cupon}</td>
                                     <td>{value.order_id}</td>
                                     <td>{value.sum} ₽</td>

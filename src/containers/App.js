@@ -34,13 +34,13 @@ class App extends Component{
             <div className = "container">
                  <Header/>
                  <Menu/>
-                 <div className = "row">
+                 {/* <div className = "row">
                       <div className = "col-md-12">
                            <div className = "filter">
                                 <input type = 'text' name = 'searchQuery' onChange = {this.searchQuery.bind(this)}/>
                            </div>
                       </div>
-                 </div>
+                 </div> */}
                  <Switch>
                  <Route exact path="/">
                     <Registred listRegistred = {this.props.registred}/>

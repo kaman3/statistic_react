@@ -12,6 +12,7 @@ class Registred extends Component{
                         <table className = "table table-striped">
                             <thead>
                                 <tr>
+                                    <th>№</th>
                                     <th>ФИО покупателя</th>
                                     <th>Номер купона</th>
                                     <th>Номер телефона</th>
@@ -23,6 +24,7 @@ class Registred extends Component{
                             { this.props.listRegistred.array != undefined ? (
                                 this.props.listRegistred.array.map((value, index) => {
                                     return <tr key={index}>
+                                           <td>{index+1}</td>
                                            <td>{value.fio}</td>
                                            <td>{value.cupon}</td>
                                            <td>{value.phone}</td>
